@@ -11,22 +11,22 @@ class Grandfather extends React.Component {
     this.props.onSonClick();
   }
   render() {
-    const { counter, sonCounter, grandsonCounter } = this.props;
+    const { counter, sonCounter, grandSonCounter } = this.props;
     const handleClick = (e) => this.handleClick(e);
     return (
       <div className="col-md-12 mt-5" onClick={handleClick}>
         <div className="btn btn-secondary btn-sm">Grandfather son: {counter + sonCounter}</div>
         <div className="row">
         <Son
-          counter={counter + sonCounter + grandsonCounter}
+          counter={counter + sonCounter + grandSonCounter}
           onClick={(e) => this.handleSonClick(e)}
         />
         <Son
-          counter={counter + sonCounter + grandsonCounter}
+          counter={counter + sonCounter + grandSonCounter}
           onClick={(e) => this.handleSonClick(e)}
         />
         <Son
-          counter={counter + sonCounter + grandsonCounter}
+          counter={counter + sonCounter + grandSonCounter}
           onClick={(e) => this.handleSonClick(e)}
         />
         </div>
